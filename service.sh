@@ -53,6 +53,9 @@ function setResamplingParameters()
     resetprop ro.audio.resampler.psd.stopband 179
     resetprop ro.audio.resampler.psd.halflength 520
     resetprop ro.audio.resampler.psd.cutoff_percent 94
+    # Uncomment the following lines if you intend to replay only 96 kHz & 24 bits Hires. tracks
+    # resetprop ro.audio.resampler.psd.enable_at_samplerate 96000
+    # resetprop ro.audio.resampler.psd.cutoff_percent 44
 
     reloadAudioserver
 }

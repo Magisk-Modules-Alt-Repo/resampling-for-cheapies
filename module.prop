@@ -1,6 +1,6 @@
 id=resampling-for-cheapies
 name=Resampling for cheapies
-version=v1.0.0
-versionCode=1000
+version=v1.0.1
+versionCode=1001
 author=zyhk
-description=Setting re-sampling parameters of AudioFlinger (the system-wide mixer) so as to improve audio quality of DAC's under $30 and LDAC BT devices especially.
+description=For avoiding specific distortion about LDAC bluetooth earphones and DAC's under $30, sets special re-sampling at the system-wide mixer.
