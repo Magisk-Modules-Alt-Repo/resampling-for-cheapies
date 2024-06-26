@@ -49,13 +49,17 @@ function setResamplingParameters()
     resetprop --delete ro.audio.resampler.psd.tbwcheat
 #  End of workaround
     
-    resetprop ro.audio.resampler.psd.enable_at_samplerate 44100
     resetprop ro.audio.resampler.psd.stopband 179
     resetprop ro.audio.resampler.psd.halflength 520
+    resetprop ro.audio.resampler.psd.enable_at_samplerate 44100
+    
+    #  If you feel your LDAC earphones or "cheapie" DAC wouldn't become to sound good at all, 
+    #  try replacing "94" (below)  with one of "93" down to "87" for appropriately cutting off ultrasonic noise causing intermodulation
     resetprop ro.audio.resampler.psd.cutoff_percent 94
-    # Uncomment the following lines if you intend to replay only 96 kHz & 24 bits Hires. tracks
-    # resetprop ro.audio.resampler.psd.enable_at_samplerate 96000
-    # resetprop ro.audio.resampler.psd.cutoff_percent 44
+    
+    #  Uncomment the following lines if you intend to replay only 96 kHz & 24 bits Hires. tracks
+    #resetprop ro.audio.resampler.psd.enable_at_samplerate 96000
+    #resetprop ro.audio.resampler.psd.cutoff_percent 44
 
     reloadAudioserver
 }
