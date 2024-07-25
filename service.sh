@@ -1,5 +1,9 @@
 #!/system/bin/sh
 
+#  Changed the default target sampling rate from 44.1 kHz to 48 kHz because YTM recently changed its streaming format 
+#    from AAC (141; 44.1 kHz & 256 kbps stereo) to Opus (774; 48 kHz & 256 kbps vbr stereo), Am@zon music had already changed its SD format from 
+#    AAC (44.1 kHz & 256 kbps stereo) to Opus (48 kHz & 192 kbps vbr stereo) and YT had adopted Opus(251; 48 kHz & 160 kbps vbr stereo)
+
 function reloadAudioserver()
 {
     # wait for system boot completion and audiosever boot up
@@ -49,17 +53,28 @@ function setResamplingParameters()
     resetprop --delete ro.audio.resampler.psd.tbwcheat
 #  End of workaround
     
-    resetprop ro.audio.resampler.psd.stopband 179
-    resetprop ro.audio.resampler.psd.halflength 520
     resetprop ro.audio.resampler.psd.enable_at_samplerate 44100
+    resetprop ro.audio.resampler.psd.stopband 194
+    resetprop ro.audio.resampler.psd.halflength 520
     
-    #  If you feel your LDAC earphones or "cheapie" DAC wouldn't become to sound good at all, 
-    #  try replacing "94" (below)  with one of "93" down to "87" for appropriately cutting off ultrasonic noise causing intermodulation
-    resetprop ro.audio.resampler.psd.cutoff_percent 94
+    #  If you feel your LDAC earphones or "cheapie" DAC wouldn't become to sound well or loses mellowness at all, 
+    #  try replacing "85" (below)  with "86" or "87" for appropriately cutting off ultrasonic noise causing intermodulation
+    #
+    resetprop ro.audio.resampler.psd.cutoff_percent 85
     
-    #  Uncomment the following lines if you intend to replay only 96 kHz & 24 bits Hires. tracks
+    #  Uncomment the following resetprop lines if you intend to replay only 44.1 kHz & 16 and 24 bit tracks; 
+    #  If you feel your LDAC earphones or "cheapie" DAC wouldn't become to sound well or loses mellowness at all, 
+    #  try replacing "93" (below)  with "94" or "95"  for appropriately cutting off ultrasonic noise causing intermodulation
+    #
+    #resetprop ro.audio.resampler.psd.stopband 179
+    #resetprop ro.audio.resampler.psd.cutoff_percent 93
+
+    #  Uncomment the following resetprop lines if you intend to replay only 96 kHz & 24 bit Hires. tracks.
+    #  If you feel your LDAC earphones or "cheapie" DAC wouldn't become to sound well, 
+    #  try replacing "43" (below)  with "44" for appropriately cutting off ultrasonic noise causing intermodulation
+    #
     #resetprop ro.audio.resampler.psd.enable_at_samplerate 96000
-    #resetprop ro.audio.resampler.psd.cutoff_percent 44
+    #resetprop ro.audio.resampler.psd.cutoff_percent 43
 
     reloadAudioserver
 }
