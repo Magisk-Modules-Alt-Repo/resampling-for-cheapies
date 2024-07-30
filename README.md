@@ -14,6 +14,7 @@ Notes:
 * This module doesn't have the effect for Hires. tracks (greater than 48 kHz sample rate) which not having large pre-echo and ringing, and high frequency dithering noise, except ultrasonic noise added on purpose for mellowness. Anyhow, if you want to improve the quality of only Hires. tracks on "cheapie" devices, edit "service.sh" script in the installed place or its ZIP archive as described in the script.
 * LDAC earphones and DAC's deteriorate the quality more or less by their internal over-sampling filtering when receiving low sample rate data.
 * Don't forget disabling "A2DP hardware offload" on Snapdragon devices (if you can), because it forces double re-sampling (48 kHz to 48 kHz (i.e., a low-pass filter), and 48 kHz to 96 kHz) and it is so much worse that the latter re-sampling guts the former one at all.
+* Also don't forget disabling "Absolute Volume" of Bluetooth devices in developer settings and setting a volume at the device side to be maximum for the best audio quality.
 
 <br/>
 <br/>
@@ -33,9 +34,9 @@ Notes:
     | 165 | 360 | | 104 | Low performance devices of A12 and later with audio ones having small amp. non-linearity |
     | 179 | 408 | | 99 | General purpose on A12 and later for audio devices having small amp. non-linearity |
     | Parameters of this module: | - | - | - | - |
-    | 179 | 520 | 95,94,93 | | AAC or Flac 44.1kHz; for LDAC BT earphones and DAC's under $30 both having large amp. non-linearity |
-    | 194 | 520 | 87,86,85 | | Opus 48kHz; for LDAC BT earphones and DAC's under $30 both having large amp. non-linearity |
-    | 194 | 520 | 44,43 | | Hires. 96kHz; for LDAC BT earphones and DAC's under $30 both having large amp. non-linearity |
+    | 179 | 520 | 93,94,95 | | AAC or Flac 44.1kHz; for LDAC BT earphones and DAC's under $30 both having large amp. non-linearity |
+    | 194 | 520 | 85,86,87 | | Opus 48kHz; for LDAC BT earphones and DAC's under $30 both having large amp. non-linearity |
+    | 194 | 520 | 43,44 | | Hires. 96kHz; for LDAC BT earphones and DAC's under $30 both having large amp. non-linearity |
     | External examples: | - | - | - | - |
     | 100 | 29 | (91) | 109 | AK4493 (Sharp roll-off N-fold over-sampling) |
     | 150 | 42 | (91) | 109 | AK4191EQ (Sharp roll-off N-fold over-sampling) |
