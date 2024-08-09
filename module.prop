@@ -3,4 +3,4 @@ name=Resampling for cheapies
 version=v2.0.0
 versionCode=2000
 author=zyhk
-description=For avoiding smoky distortion specific to LDAC Bluetooth earphones and DAC's under $30 (probably), this sets special re-sampling at the system-wide mixer.
+description=For avoiding smoky distortion (a primary cause of cheapie sound) specific to LDAC Bluetooth earphones and DAC's under $30 (probably), this sets special re-sampling at the system-wide mixer.
