@@ -33,16 +33,18 @@ Notes:
     | 159 | 480 | 92 | | Old devices of A11 and earlier |
     | 165 | 360 | | 104 | Low performance devices of A12 and later with audio ones having small amp. non-linearity |
     | 179 | 408 | | 99 | General purpose on A12 and later for audio devices having small amp. non-linearity |
+    | 194 | 520 | | 98 | Ultra Hi-Fi for audio devices having small amp. non-linearity |
     | Parameters of this module: | - | - | - | - |
-    | 179 | 520 | 93,94,95 | | AAC or Flac 44.1kHz; for LDAC BT earphones and DAC's under $30 both having large amp. non-linearity |
-    | 194 | 520 | 85,86,87 | | Opus 48kHz; for LDAC BT earphones and DAC's under $30 both having large amp. non-linearity |
-    | 194 | 520 | 43,44 | | Hires. 96kHz; for LDAC BT earphones and DAC's under $30 both having large amp. non-linearity |
+    | 179 | 520 | 91 ~ 94 | | AAC or Flac 44.1kHz; for LDAC BT earphones and DAC's under $30 both having large amp. non-linearity |
+    | 194 | 520 | 83 ~ 86 | | Opus 48kHz; for LDAC BT earphones and DAC's under $30 both having large amp. non-linearity |
+    | 194 | 520 | 42,43 | | Hires. 96kHz; for LDAC BT earphones and DAC's under $30 both having large amp. non-linearity |
     | External examples: | - | - | - | - |
     | 100 | 29 | (91) | 109 | AK4493 (Sharp roll-off N-fold over-sampling) |
     | 150 | 42 | (91) | 109 | AK4191EQ (Sharp roll-off N-fold over-sampling) |
     | 120 | 35 | (97) | 110 | ES9038PRO (Fast roll-off N-fold over-sampling) |
     | vary 50 ~ 118 | 34 | 96 | (398) | ES9039PRO (Fast roll-off N-fold over-sampling) |
     | 110 | 40 | (96) | 109 | CS43131 (Fast roll-off N-fold over-sampling) |
+    | 110 | 40 | (96) | 109 | CS43198 (Fast roll-off N-fold over-sampling) |
     | 98 | 130 | 98.5 | | MacOS Leopard (guess) |
     | 159 | 240 | | 99 | iZotope, No-Alias (guess) |
     | 100 | 64 | | 99 | SoX HQ linear phase (guess) |
@@ -59,7 +61,7 @@ Notes:
     | DAC | light | heavy | heavy | AK4491EQ Sharp roll-off |
     | DAC | medium | medium | light | ES9039PRO Fast roll-off |
     | Mastering tool | slight | slight | light | iZotope, No Alias (guess) |
-    | Audio misc. settings | almost none | almost none | light | for general purpose |
+    | Audio misc. settings | almost none | almost none | light | Ultra Hi-Fi |
     | Audio misc. settings | very slight | very slight | medium | for low performance devices |
     | Audio misc. settings | slight | almost none | almost none | for old devices |
     | This module | almost none | almost none | very slight | for LDAC BT earphones and DAC's under $30 |
