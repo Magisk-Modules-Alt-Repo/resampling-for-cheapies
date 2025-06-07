@@ -35,7 +35,7 @@ Notes:
     | 179 | 408 | | 99 | General purpose on A12 and later for audio devices having small amp. non-linearity |
     | 194 | 520 | | 98 | Ultra Hi-Fi for audio devices having small amp. non-linearity |
     | Parameters of this module: | - | - | - | - |
-    | 179 | 520 | 91 ~ 94 | | AAC or Flac 44.1kHz; for LDAC BT earphones and DAC's under $30 both having large amp. non-linearity |
+    | 194 | 520 | 91 ~ 94 | | AAC or Flac 44.1kHz; for LDAC BT earphones and DAC's under $30 both having large amp. non-linearity |
     | 194 | 520 | 83 ~ 86 | | Opus 48kHz; for LDAC BT earphones and DAC's under $30 both having large amp. non-linearity |
     | 194 | 520 | 42,43 | | Hires. 96kHz; for LDAC BT earphones and DAC's under $30 both having large amp. non-linearity |
     | External examples: | - | - | - | - |
