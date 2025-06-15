@@ -13,7 +13,7 @@ Notes:
 * If you feel your LDAC earphones or "cheapie" DAC wouldn't become to sound good at all, try editting "service.sh" script in the installed place or its ZIP archive so as to replace "85" in it with "86" or "87" for appropriately cutting off ultrasonic noise causing intermodulation.
 * This module doesn't have the effect for Hires. tracks (greater than 48 kHz sample rate) which not having large pre-echo and ringing, and high frequency dithering noise, except ultrasonic noise added on purpose for mellowness. Anyhow, if you want to improve the quality of only Hires. tracks on "cheapie" devices, edit "service.sh" script in the installed place or its ZIP archive as described in the script.
 * LDAC earphones and DAC's deteriorate the quality more or less by their internal over-sampling filtering when receiving low sample rate data.
-* Don't forget disabling "A2DP hardware offload" on Snapdragon devices (if you can), because it forces double re-sampling (48 kHz to 48 kHz (i.e., a low-pass filter), and 48 kHz to 96 kHz) and it is so much worse that the latter re-sampling guts the former one at all.
+* Don't forget disabling "A2DP hardware offload" on Snapdragon devices (if you can), because it forces post re-sampling (48 kHz to 96 kHz) and it is so much worse that this re-sampling.
 * Also don't forget disabling "Absolute Volume" of Bluetooth devices in developer settings and setting a volume at the device side to be maximum for the best audio quality by avoiding analog low pass filtering on portable devices having very large input parasitic capacitance.
 
 <br/>
